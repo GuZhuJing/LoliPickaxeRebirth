@@ -1,0 +1,23 @@
+{
+	"type" : "minecraft:crafting_shaped",
+	"group" : "lolipickaxerebirth:common_lolipickaxe",
+	"result" : {
+		"item" : "lolipickaxerebirth:common_lolipickaxe",
+		"count" : 1
+	},
+	"pattern" : ["ABC", " # ", " # "],
+	"key" : {
+		"A" : {
+			"item" : "minecraft:diamond_axe"
+		},
+		"B" : {
+			"item" : "minecraft:diamond_pickaxe"
+		},
+		"C" : {
+			"item" : "minecraft:diamond_shovel"
+		},
+		"#" : {
+			"item" : "minecraft:diamond"
+		}
+	}
+}

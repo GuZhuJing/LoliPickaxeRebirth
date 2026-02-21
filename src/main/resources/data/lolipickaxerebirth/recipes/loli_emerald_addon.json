@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "lolipickaxerebirth:loli_emerald_addon",
+  "result": {
+    "item": "lolipickaxerebirth:loli_emerald_addon",
+    "nbt": {
+      "MaterialLevel": 1,
+      "display": {
+        "Name": "{\"translate\":\"item.lolipickaxerebirth.loli_emerald_addon.level1\",\"italic\":false}"
+      }
+    },
+    "count": 1
+  },
+  "ingredients": [
+    {"item": "minecraft:emerald"},
+    {"item": "minecraft:emerald_block"}
+  ]
+}

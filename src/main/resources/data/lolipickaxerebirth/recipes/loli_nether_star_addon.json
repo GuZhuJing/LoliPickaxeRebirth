@@ -1,0 +1,20 @@
+{
+	"type" : "minecraft:crafting_shaped",
+	"group" : "lolipickaxerebirth:loli_nether_star_addon",
+	"result" : {
+		"item" : "lolipickaxerebirth:loli_nether_star_addon",
+      "nbt": {
+        "MaterialLevel": 1,
+        "display": {
+          "Name": "{\"translate\":\"item.lolipickaxerebirth.loli_nether_star_addon.level1\",\"italic\":false}"
+        }
+      },
+      "count": 1
+	},
+	"pattern" : ["X"],
+	"key" : {
+		"X" : {
+			"item" : "minecraft:nether_star"
+		}
+	}
+}

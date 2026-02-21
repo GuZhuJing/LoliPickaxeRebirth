@@ -1,0 +1,13 @@
+{
+	"variants" : {
+		"normal" : {
+			"model" : "lolipickaxerebirth:loli_fail_respond_tnt"
+		},
+		"explode=false" : {
+			"model" : "lolipickaxerebirth:loli_fail_respond_tnt"
+		},
+		"explode=true" : {
+			"model" : "lolipickaxerebirth:loli_fail_respond_tnt"
+		}
+	}
+}

@@ -1,0 +1,70 @@
+# 这是一个示例 mods.toml 文件。它包含与加载模组相关的数据。
+# 其中有几个必填字段 (#mandatory)，还有许多可选字段 (#optional)。
+# 整体格式是标准 TOML 格式，v0.5.0。
+# 注意此文件中有几个 TOML 列表。
+# 在此处查找更多关于 toml 格式的信息：https://github.com/toml-lang/toml
+# 要加载的模组加载器类型名称 - 对于常规 FML @Mod 模组，应为 javafml
+modLoader = "javafml" #mandatory
+# 要匹配的所述模组加载器的版本范围 - 对于常规 FML @Mod，它将是 FML 版本。当前为 47。
+loaderVersion = "${loader_version_range}" #mandatory
+# 你的模组的许可证。这是必填元数据，允许更容易理解你的再分发属性。
+# 在 https://choosealicense.com/ 查看你的选项。保留所有权利是默认版权立场，因此在此处默认。
+license = "${mod_license}"
+# 当出现问题时，供人们参考的 URL
+#issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/" #optional
+# 模组列表 - 此处允许的数量由单个模组加载器决定
+[[mods]]
+modId = "loliPickaxe_rebirth"  # 模组的 modid
+version = "26.1.1"  # 模组的版本号
+displayName = "氪金萝莉：重生"  # 模组的显示名称
+updateJSONURL = "https://github.com/GuZhuJing/LoliPickaxeRebirth" #optional
+displayURL = "https://github.com/GuZhuJing/LoliPickaxeRebirth" # 此模组的"主页" URL，显示在模组 UI 中
+logoFile="lolipickaxerebirth.png"  # 包含用于显示的图标的文件名（在模组 JAR 的根目录中）
+# 显示在模组 UI 中的文本字段
+#credits="" #optional
+authors = "GuZhuJing"  # 显示在模组 UI 中的文本字段
+description = '''${mod_description}'''  # 模组的描述文本（多行！）
+
+# [[mixins]] 块允许你向 FML 声明你的 mixin 配置，以便它被加载。
+[[mixins]]
+config = "${mod_id}.mixins.json"
+
+# [[accessTransformers]] 块允许你声明你的 AT 文件在哪里。
+# 如果省略此块，将尝试从 META-INF/accesstransformer.cfg 加载 AT 的后备尝试
+#[[accessTransformers]]
+#file="META-INF/accesstransformer.cfg"
+
+# coremods 配置文件路径不可配置，始终从 META-INF/coremods.json 加载
+
+# 依赖项 - 使用 . 指示特定 modid 的依赖项。依赖项是可选的。
+[[dependencies."${mod_id}"]] #optional
+# 依赖项的 modid
+modId = "neoforge" #mandatory
+# 依赖项的类型。可以是 "required"、"optional"、"incompatible" 或 "discouraged" 之一（不区分大小写）。
+# 'required' 要求模组存在，'optional' 不要求
+# 'incompatible' 将在模组存在时阻止游戏加载，'discouraged' 将显示警告
+type = "required" #mandatory
+# 描述为什么需要依赖项或为什么不兼容的可选字段
+# reason="..."
+# 依赖项的版本范围
+versionRange = "${neo_version_range}" #mandatory
+# 依赖项的排序关系。
+# BEFORE - 此模组在依赖项之前加载
+# AFTER - 此模组在依赖项之后加载
+ordering = "NONE"
+# 应用此依赖项的端 - BOTH、CLIENT 或 SERVER
+side = "BOTH"
+# 这是另一个依赖项
+[[dependencies."${mod_id}"]]
+modId = "minecraft"
+type = "required"
+# 此版本范围声明当前 Minecraft 版本的最小值，但不包括下一个主要版本
+versionRange = "${minecraft_version_range}"
+ordering = "NONE"
+side = "BOTH"
+
+# 功能是游戏环境的特定属性，你可能想要声明你需要。此示例声明
+# 你的模组需要 GL 版本 3.2 或更高。将添加其他功能。它们是端感知的，因此声明此内容不会
+# 例如，阻止你的模组在服务器上加载。
+#[features."${mod_id}"]
+#openGLVersion="[3.2,)"

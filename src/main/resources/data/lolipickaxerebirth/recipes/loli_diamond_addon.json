@@ -1,0 +1,20 @@
+{
+	"type" : "minecraft:crafting_shaped",
+	"group" : "lolipickaxerebirth:loli_diamond_addon",
+	"result" : {
+		"item" : "lolipickaxerebirth:loli_diamond_addon",
+		"nbt":{
+          "MaterialLevel": 1,
+          "display":{
+            "Name": "{\"translate\":\"item.lolipickaxerebirth.loli_diamond_addon.level1\",\"italic\":false}"
+          }
+        },
+		"count" : 1
+	},
+	"pattern" : ["X"],
+	"key" : {
+		"X" : {
+			"item" : "minecraft:diamond"
+		}
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"type" : "minecraft:crafting_shaped",
+	"group" : "lolipickaxerebirth:loli_netherite_addon",
+	"result" : {
+		"item" : "lolipickaxerebirth:loli_netherite_addon",
+		"nbt": "{ \"MaterialLevel\": 1, CustomName: '{\"translate\":\"item.lolipickaxerebirth.loli_netherite_addon.level1\"}'}",
+		"count" : 1
+	},
+	"pattern" : ["XYX", "YXY", "XYX"],
+	"key" : {
+		"X" : {
+			"item" : "minecraft:netherite_ingot"
+		},
+		"Y" : {
+			"item" : "minecraft:netherite_block"
+		}
+	}
+}

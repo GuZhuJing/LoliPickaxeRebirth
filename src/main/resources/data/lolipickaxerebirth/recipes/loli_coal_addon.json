@@ -1,0 +1,23 @@
+{
+	"type" : "minecraft:crafting_shaped",
+	"group" : "lolipickaxerebirth:loli_coal_addon",
+	"result" : {
+      "item": "lolipickaxerebirth:loli_coal_addon",
+      "count": 1,
+      "nbt": {
+        "MaterialLevel": 1,
+        "display": {
+          "Name": "{\"translate\":\"item.lolipickaxerebirth.loli_coal_addon.level1\",\"italic\":false}"
+        }
+      }
+    },
+	"pattern" : ["XYX", "YXY", "XYX"],
+	"key" : {
+		"X" : {
+			"item" : "minecraft:coal"
+		},
+		"Y" : {
+			"item" : "minecraft:coal_block"
+		}
+	}
+}

@@ -1,0 +1,9 @@
+# 用户特定内容
+.gradle/
+.idea/
+.vscode/
+build/
+run/
+gradlew
+gradlew.bat
+!gradle-wrapper.jar

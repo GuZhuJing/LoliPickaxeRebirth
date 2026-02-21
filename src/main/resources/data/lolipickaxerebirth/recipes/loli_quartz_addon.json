@@ -1,0 +1,23 @@
+{
+	"type" : "minecraft:crafting_shaped",
+	"group" : "lolipickaxerebirth:loli_quartz_addon",
+	"result" : {
+		"item" : "lolipickaxerebirth:loli_quartz_addon",
+      "nbt": {
+        "MaterialLevel": 1,
+        "display": {
+          "Name": "{\"translate\":\"item.lolipickaxerebirth.loli_quartz_addon.level1\",\"italic\":false}"
+        }
+      },
+      "count": 1
+	},
+	"pattern" : ["XYX", "YXY", "XYX"],
+	"key" : {
+		"X" : {
+			"item" : "minecraft:quartz"
+		},
+		"Y" : {
+			"item" : "minecraft:quartz_block"
+		}
+	}
+}
